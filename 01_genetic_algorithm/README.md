@@ -1,6 +1,6 @@
 # **Úloha 1: Genetický algoritmus - binární problém**
 
-> Kompletní interaktivní kód s možností spuštění [jupyter notebooku zde](./genetic_algorithm.ipynb).
+> Kompletní jupyter notebook včetně kódu [zde](./genetic_algorithm.ipynb).
 
 ## **Výsledky a statistiky**
 
