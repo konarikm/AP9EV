@@ -1,5 +1,5 @@
 # **Úloha 1: Genetický algoritmus - binární problém**
-> Kompletní jupyter notebook včetně kódu [zde](./genetic_algorithm.ipynb).
+> Kompletní jupyter notebook včetně kódu [zde](./binary_ga.ipynb).
 
 Genetický algoritmus je stochastická optimalizační metoda inspirovaná Darwinovou teorií přirozeného výběru a biologickou evolucí. Namísto deterministického procházení stavového prostoru udržuje populaci potenciálních řešení, která se iterativně vyvíjí v čase pomocí základních evolučních mechanismů:
 
