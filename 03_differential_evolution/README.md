@@ -8,7 +8,7 @@ Cílem úkolu je implementovat **diferenciální evoluci (DE)** a porovnat konve
 Jeden krok DE pro každého jedince $\mathbf{x}_i$ probíhá takto:
 1. **Mutace:** vytvoření mutačního vektoru $\mathbf{v}_i$ z ostatních jedinců populace.
 2. **Binomické křížení:** zkušební vektor $\mathbf{u}_i$ přebírá každou složku z $\mathbf{v}_i$ s pravděpodobností $CR$, jinak z $\mathbf{x}_i$ (alespoň jedna složka je vždy z $\mathbf{v}_i$).
-3. **Selekce:** $\mathbf{u}_i$ nahradí $\mathbf{x}_i$, pokud není horší ($f(\mathbf{u}_i) \le f(\mathbf{x}_i)$).
+3. **Selekce:** $\mathbf{u}_i$ nahradí $\mathbf{x}_i$, pokud není horší ($`f(\mathbf{u}_i) \le f(\mathbf{x}_i)`$).
 
 Všechny úlohy jsou řešeny pro dimenzi 10D s pevným rozpočtem 10 000 evaluací účelové funkce a populací o velikosti 50 jedinců. Cílem je vždy **minimalizace** dané funkce. Výsledky jsou zprůměrovány z 10 nezávislých běhů.
 
@@ -16,8 +16,8 @@ Všechny úlohy jsou řešeny pro dimenzi 10D s pevným rozpočtem 10 000 evalua
 
 | Varianta | Mutace | $F$ | $CR$ |
 | :--- | :--- | :--- | :--- |
-| **Rand/1** | $\mathbf{v}_i = \mathbf{x}_{r1} + F (\mathbf{x}_{r2} - \mathbf{x}_{r3})$ | 0.5 | 0.8 |
-| **Best/1** | $\mathbf{v}_i = \mathbf{x}_{best} + F (\mathbf{x}_{r1} - \mathbf{x}_{r2})$ | 0.5 | 0.8 |
+| **Rand/1** | $`\mathbf{v}_i = \mathbf{x}_{r1} + F (\mathbf{x}_{r2} - \mathbf{x}_{r3})`$ | 0.5 | 0.8 |
+| **Best/1** | $`\mathbf{v}_i = \mathbf{x}_{best} + F (\mathbf{x}_{r1} - \mathbf{x}_{r2})`$ | 0.5 | 0.8 |
 | **jDE** | Rand/1 s adaptivními parametry | počáteční 0.5 (rozsah 0.1 až 0.9) | počáteční 0.9 (rozsah 0 až 1) |
 
 Indexy $r1, r2, r3$ jsou vzájemně různé a různé od $i$. Hodnoty mimo definiční obor funkce se po mutaci ořezávají na jeho hranice.
